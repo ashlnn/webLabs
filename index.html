@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Каталог порід тварин. Навчальний проєкт Шевченко Олександри.">
+  <title>Мій каталог порід тварин, Шевченко Олександра</title>
+</head>
+<body>
+
+  <header>
+    <h1>Каталог порід тварин</h1>
+    <p>Веду цей каталог я, Шевченко Олександра, студентка групи ІН-41/1 </p>
+    <nav>
+      <ul>
+        <li><a href="#about">Про мене</a></li>
+        <li><a href="#catalog">Каталог</a></li>
+        <li><a href="#favorites">Мої улюблені</a></li>
+        <li><a href="#contacts">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <article id="about">
+      <h2>Про мене та проєкт</h2>
+      <p>
+        Мене звати Олександра, я навчаюсь у Сумському державному університеті за спеціальністю «Інформатика» і вчусь на програміста. Крім програмування, мене цікавлять тварини, малювання та перегляд фільмів.
+      </p>
+      <p>
+        Цей каталог порід тварин я роблю як навчальний проєкт і вдосконалюватиму його протягом семестру.
+      </p>
+    </article>
+
+    <section id="filters">
+      <h2>Фільтри</h2>
+      <form action="#" method="get">
+
+        <fieldset>
+          <legend>Розмірна група</legend>
+          <input type="radio" id="size-all" name="size" value="all" checked>
+          <label for="size-all">Усі</label>
+          <input type="radio" id="size-small" name="size" value="small">
+          <label for="size-small">Маленькі</label>
+          <input type="radio" id="size-medium" name="size" value="medium">
+          <label for="size-medium">Середні</label>
+          <input type="radio" id="size-large" name="size" value="large">
+          <label for="size-large">Великі</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Ознаки</legend>
+          <ul>
+            <li>
+              <input type="checkbox" id="hypoallergenic" name="feature" value="hypoallergenic">
+              <label for="hypoallergenic">Гіпоалергенна</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <button type="submit">Застосувати</button>
+      </form>
+    </section>
+
+    <section id="catalog">
+      <h2>Породи тварин</h2>
+      <ul>
+
+        <li>
+          <article data-size="small" data-hypoallergenic="true">
+            <h3>Золотистий ретривер</h3>
+            <img 
+              src="assets/img/golden-retriever-300.jpg" 
+              srcset="assets/img/golden-retriever-300.jpg 300w, 
+                      assets/img/golden-retriever-600.jpg 600w" 
+              sizes="300px" 
+              width="300" 
+              height="450" 
+              alt="Фото породи Золотистий ретривер" 
+              title="Золотистий ретривер" 
+              fetchpriority="high">
+            <dl>
+              <dt>Категорія</dt>
+              <dd>Велика</dd>
+              <dt>Середня вага</dt>
+              <dd><data value="32">32 кг</data></dd>
+              <dt>Тривалість життя</dt>
+              <dd>12 років</dd>
+              <dt>Характер</dt>
+              <dd>Дружелюбний, розумний, вірний</dd>
+              <dt>Гіпоалергенна</dt>
+              <dd>Ні</dd>
+            </dl>
+            <p>Доброзичлива та енергійна собака, яка чудово підходить для родини та легко знаходить спільну мову з дітьми.</p>
+          </article>
+        </li>
+
+        <li>
+          <article data-size="small" data-hypoallergenic="true">
+            <h3>Мейн-кун</h3>
+            <img 
+              src="assets/img/maine-coon-300.jpg" 
+              srcset="assets/img/maine-coon-300.jpg 300w, 
+                      assets/img/maine-coon-600.jpg 600w" 
+              sizes="300px" 
+              width="300" 
+              height="450" 
+              alt="Фото породи Мейн-кун" 
+              title="Мейн-кун" 
+              loading="lazy">
+            <dl>
+              <dt>Категорія</dt>
+              <dd>Велика</dd>
+              <dt>Середня вага</dt>
+              <dd><data value="8">8 кг</data></dd>
+              <dt>Тривалість життя</dt>
+              <dd>14 років</dd>
+              <dt>Характер</dt>
+              <dd>Спокійний, лагідний, товариський</dd>
+              <dt>Гіпоалергенна</dt>
+              <dd>Ні</dd>
+            </dl>
+            <p>Одна з найбільших домашніх кішок із величною зовнішністю та напрочуд м'яким і добрим характером.</p>
+          </article>
+        </li>
+
+        <li>
+          <article data-size="small" data-hypoallergenic="true">
+            <h3>Французький бульдог</h3>
+            <img 
+              src="assets/img/french-bulldog-300.jpg" 
+              srcset="assets/img/french-bulldog-300.jpg 300w, 
+                      assets/img/french-bulldog-600.jpg 600w" 
+              sizes="300px" 
+              width="300" 
+              height="450" 
+              alt="Фото породи Французький бульдог" 
+              title="Французький бульдог" 
+              loading="lazy">
+            <dl>
+              <dt>Категорія</dt>
+              <dd>Маленька</dd>
+              <dt>Середня вага</dt>
+              <dd><data value="11">11 кг</data></dd>
+              <dt>Тривалість життя</dt>
+              <dd>11 років</dd>
+              <dt>Характер</dt>
+              <dd>Грайливий, лагідний, активний</dd>
+              <dt>Гіпоалергенна</dt>
+              <dd>Ні</dd>
+            </dl>
+            <p>Компактна та товариська собака, яка обожнює увагу власників і чудово адаптується до життя в квартирі.</p>
+          </article>
+        </li>
+
+        <li>
+          <article data-size="small" data-hypoallergenic="true">
+            <h3>Шотландська висловуха</h3>
+            <img 
+              src="assets/img/scottish-fold-300.jpg" 
+              srcset="assets/img/scottish-fold-300.jpg 300w, 
+                      assets/img/scottish-fold-600.jpg 600w" 
+              sizes="300px" 
+              width="300" 
+              height="450" 
+              alt="Фото породи Шотландська висловуха" 
+              title="Шотландська висловуха" 
+              loading="lazy">
+            <dl>
+              <dt>Категорія</dt>
+              <dd>Середня</dd>
+              <dt>Середня вага</dt>
+              <dd><data value="4">4 кг</data></dd>
+              <dt>Тривалість життя</dt>
+              <dd>13 років</dd>
+              <dt>Характер</dt>
+              <dd>Миролюбна, лагідна, спокійна</dd>
+              <dt>Гіпоалергенна</dt>
+              <dd>Ні</dd>
+            </dl>
+            <p>Вродлива кішка з унікальною будовою вушок та дуже врівноваженим характером.</p>
+          </article>
+        </li>
+
+        <li>
+          <article data-size="small" data-hypoallergenic="true">
+            <h3>Німецька вівчарка</h3>
+            <img 
+              src="assets/img/german-shepherd-300.jpg" 
+              srcset="assets/img/german-shepherd-300.jpg 300w, 
+                      assets/img/german-shepherd-600.jpg 600w" 
+              sizes="300px" 
+              width="300" 
+              height="450" 
+              alt="Фото породи Німецька вівчарка" 
+              title="Німецька вівчарка" 
+              loading="lazy">
+            <dl>
+              <dt>Категорія</dt>
+              <dd>Велика</dd>
+              <dt>Середня вага</dt>
+              <dd><data value="35">35 кг</data></dd>
+              <dt>Тривалість життя</dt>
+              <dd>13 років</dd>
+              <dt>Характер</dt>
+              <dd>Віддана, розумна, відважна</dd>
+              <dt>Гіпоалергенна</dt>
+              <dd>Ні</dd>
+            </dl>
+            <p>Одна з найрозумніших і найслухняніших порід, яка ідеально підходить для служби та захисту.</p>
+          </article>
+        </li>
+
+        <li>
+          <article data-size="small" data-hypoallergenic="true">
+            <h3>Пудель</h3>
+            <img 
+              src="assets/img/poodle-300.jpg" 
+              srcset="assets/img/poodle-300.jpg 300w, 
+                      assets/img/poodle-600.jpg 600w" 
+              sizes="300px" 
+              width="300" 
+              height="450" 
+              alt="Фото породи Пудель" 
+              title="Пудель" 
+              loading="lazy">
+            <dl>
+              <dt>Категорія</dt>
+              <dd>Середня</dd>
+              <dt>Середня вага</dt>
+              <dd><data value="20">20 кг</data></dd>
+              <dt>Тривалість життя</dt>
+              <dd>15 років</dd>
+              <dt>Характер</dt>
+              <dd>Енергійний, надзвичайно розумний</dd>
+              <dt>Гіпоалергенна</dt>
+              <dd>Так</dd>
+            </dl>
+            <p>Високоінтелектуальна та активна порода з кучерявою шерстю, яка вирізняється гіпоалергенними властивостями.</p>
+          </article>
+        </li>
+
+      </ul>
+    </section>
+
+    <section id="favorites">
+      <h2>Мої улюблені тварини</h2>
+
+      <figure>
+        <img 
+          src="assets/img/favorite-dog.jpg" 
+          width="300" 
+          height="450" 
+          alt="Фото улюбленої собаки" 
+          title="Мій улюблений пес" 
+          loading="lazy">
+        <figcaption>Мій улюблений пес: Золотистий ретривер</figcaption>
+      </figure>
+
+      <figure>
+        <img 
+          src="assets/img/favorite-cat.jpg" 
+          width="300" 
+          height="450" 
+          alt="Фото улюбленого кота" 
+          title="Мій улюблений кіт" 
+          loading="lazy">
+        <figcaption>Мій улюблений кіт: Мейн-кун</figcaption>
+      </figure>
+    </section>
+
+  </main>
+
+  <aside>
+    <h2>Додатково</h2>
+
+    <h3>Цитата</h3>
+    <blockquote>
+      <p>Until one has loved an animal, a part of one's soul remains unawakened.</p>
+    </blockquote>
+    <p>Анатоль Франс</p>
+
+    <h3>Цікавий факт</h3>
+    <p>Собаки мають унікальний відбиток носа, який є таким же неповторним, як і відбитки пальців людини.</p>
+
+    <h3>Мої соцмережі</h3>
+    <ul>
+      <li><a href="#">Telegram</a></li>
+      <li><a href="#">Instagram</a></li>
+    </ul>
+  </aside>
+
+  <footer id="contacts">
+    <p>Email: <a href="mailto:boberka26@gmail.com">boberka26@gmail.com</a></p>
+    <p>&copy; 2026 Шевченко Олександра</p>
+    <p>Фотографії належать їхнім правовласникам.</p>
+  </footer>
+
+</body>
+</html>
